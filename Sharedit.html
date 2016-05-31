@@ -1,12 +1,25 @@
 <head>
   <title>Sharedit</title>
 </head>
-
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <!-- / nav container -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sharedit</a>
+    </div>
+  </nav>
+  <div class="container top-margin">
+  <div class="row">
+    <div class="col-md-6">
+      {{> editor}}
+    </div>
+    <div class="col-md-6">
+      {{> viewer}}
+    </div>
+  </div>
+</div>
 </body>
-
 <template name="editor">
-  {{> editor}}
   {{>sharejsCM docid=docid id="editor"}}
 </template>
+
