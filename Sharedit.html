@@ -2,11 +2,7 @@
   <title>Sharedit</title>
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Sharedit</a>
-    </div> <!-- / nav container -->
-  </nav> 
+  
   <div class="container top-margin">
     <div class="row">
       <div class="col-md-6">
@@ -18,10 +14,10 @@
     </div>
   </div>
 </body>
-<template name="editor">    
+<template name="editor" class="top-margin">    
   {{>sharejsCM docid=docid onRender=config id="editor"}}
 </template>
-<template name="viewer">  
+<template name="viewer" class="top-margin">  
   <iframe id="viewer_iframe">
   </iframe>
 </template>
